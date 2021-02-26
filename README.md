@@ -2,11 +2,11 @@
 
 Here is the code for my submission for Spatial Analytics assignment 4:
 
-For a nice and smooth depiction of my code see the .md-file in this repository ("Spatial-Analytics-Assignment-4.md")
+For a nice and smooth depiction of my code see the .md-file in this repository ("Assignment-4.md")
 
 If you wish to run the code yourself you should download the .Rmd-file in this repository. This can be done manually by going through the following steps:
 
-1: Open the "Spatial Analytics Assignment 4.Rmd"-file in this repository.
+1: Open the "Assignment 4.Rmd"-file in this repository.
 
 2: Press "Raw" in the top right corner
 
