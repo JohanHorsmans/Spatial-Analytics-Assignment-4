@@ -179,8 +179,8 @@ are similar.
   - Convert the neighborhoods object to an sp object for use with the
     raster package.
   - Compute the mean of canopy values by neighborhood using
-    `raster::extract()` with the argument fun = mean (this might take a
-    minute).
+    `raster::extract()` with the argument `fun = mean` (this might take
+    a minute).
   - Use `mutate()` to add a new column avg\_canopy to neighborhoods,
     which is equal to canopy\_neighborhoods.
 
@@ -362,12 +362,13 @@ ggplot(neighborhoods) +
   scale_fill_gradient(low = "#edf8e9", high = "#005a32")
 ```
 
-![](Assignment-4_files/figure-gfm/unnamed-chunk-5-4.png)<!-- --> Great\!
-You’re making progress in improving the graphics. The new layer type
-`geom_sf()` is a big help for creating maps in `ggplot2`. Altering the
-colors made the maps much more readable and you probably noticed that
-they seem to show a different pattern. How about doing this with `tmap`?
-See the next exercise.
+![](Assignment-4_files/figure-gfm/unnamed-chunk-5-4.png)<!-- -->
+
+Great\! You’re making progress in improving the graphics. The new layer
+type `geom_sf()` is a big help for creating maps in `ggplot2`. Altering
+the colors made the maps much more readable and you probably noticed
+that they seem to show a different pattern. How about doing this with
+`tmap`? See the next exercise.
 
 # Task 6: Create a map using `tmap`
 
@@ -385,9 +386,9 @@ Load tmap library in your workspace. Use `tm_shape()` and
 `tm_polygons()` to create a map of neighborhoods with no color-coding.
 Use `tm_shape()` and `tm_polygons()` to create a map of neighborhoods
 and color code by tree\_density. Create a new map by updating your
-neighborhoods map to include palette = “Greens” in `tm_polygons()`.
+neighborhoods map to include `palette = "Greens"` in `tm_polygons()`.
 Create a similar map of the variable avg\_canopy to include the
-following arguments in `tm_polygons()`: style = “quantile” n = 7.
+following arguments in `tm_polygons()`: `style = "quantile"` `n = 7`.
 
 ``` r
 # Load tmap library
@@ -426,9 +427,10 @@ tm_shape(neighborhoods) +
         title = "Average tree canopy (%)")
 ```
 
-![](Assignment-4_files/figure-gfm/unnamed-chunk-6-4.png)<!-- --> You can
-see the beauty of `tmap.` It makes nice maps in R relatively easily and
-provides a lot of flexibility to alter your plot as needed
+![](Assignment-4_files/figure-gfm/unnamed-chunk-6-4.png)<!-- -->
+
+You can see the beauty of `tmap.` It makes nice maps in R relatively
+easily and provides a lot of flexibility to alter your plot as needed
 
 # Task 7: Use tmap to create a final prettier(?) map
 
